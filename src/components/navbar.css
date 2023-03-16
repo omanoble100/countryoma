@@ -1,0 +1,49 @@
+
+.nav {
+    background-color: hsl(209, 23%, 22%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding: 1.5rem 4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+.background__mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-mode {
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+
+@media screen and (max-width: 750px){
+    .nav {
+        padding: 1.5rem 2rem 1rem;
+    }
+    .country__heading h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .nav {
+        padding: 1.5rem 1rem 1rem;
+    }
+    .country__heading h2 {
+        font-size: 16px;
+    }
+
+    .text-mode {
+        font-size: 14px;
+    }
+}

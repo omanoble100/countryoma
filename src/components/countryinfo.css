@@ -1,0 +1,138 @@
+
+
+.country__info{
+    padding: 4rem 5rem;
+}
+
+
+.country__back-button {
+    background: hsl(209, 23%, 22%);
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.country__details-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+    padding: 2rem 5rem;
+    
+}
+
+
+.country-flag-info img{
+    width: 350px;
+    
+}
+
+.country__information-info {
+    margin-left: 100px;
+}
+
+
+.country-information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 40px;
+    
+}
+
+.country-information div {
+    margin-right: 30px;
+    line-height: 2rem;
+
+}
+
+.country__borders {
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.display-borders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.country__borders button {
+    background: hsl(209, 23%, 22%);
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .country__info{
+        padding: 4rem 2rem;
+    }
+
+    .country__details-info{
+        padding: 3rem 1rem;
+    }
+
+    .country-flag-info {
+        margin-right: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 790px){
+    .country__info{
+        padding: 4rem 2rem;
+    }
+
+    .country__details-info{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .country-flag-info {
+        margin-bottom: 50px;
+        
+    }
+
+
+    
+}
+
+@media screen and (max-width: 450px){
+    .country__info{
+        padding:  2rem;
+    }
+
+    .country__details-info{
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .country-flag-info {
+        margin-right: 0;
+    }
+
+    .country-flag-info img{
+        width: 350px;
+        
+    }
+
+    .country-information{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+   
+    
+}
