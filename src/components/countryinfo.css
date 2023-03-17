@@ -129,6 +129,10 @@
         
     }
 
+    .country__information-info {
+        margin-left: 10px;
+    }
+
     .country-information{
         flex-direction: column;
         justify-content: flex-start;

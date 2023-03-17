@@ -2,7 +2,7 @@
 
 This project UI/UX was gotten from (https://frontendmentor.com).
 
-Live site : 
+Live site : https://countryoma-s135.vercel.app/
 
 In the project directory, you can run:
 
