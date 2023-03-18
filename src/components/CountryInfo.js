@@ -33,10 +33,10 @@ const CountryInfo = () => {
   
   return (
     <div className='country__info'>
+     
+      <Link to='/'><button className='country__back-button'>Back</button></Link>
       {isLoading && !error && <h4>Loading.......</h4>}
             {error && !isLoading && <h4>{error}</h4>}
-      <Link to='/'><button className='country__back-button'>Back</button></Link>
-
         {
          country.length > 0 ? country?.map((country, index) =>(
             <div className='country__details-info' key={country.name.common + index}>
@@ -68,11 +68,11 @@ const CountryInfo = () => {
                       <div className='country__borders'>
                           <p><strong>Border Countries :</strong></p>
 
-                          { country?.borders?.map(border => (
+                          { country.borders ? country?.borders?.map(border => (
                             <div className='display-borders' key={border}>
                                 <button >{border}</button>
                             </div>
-                          )) }
+                          )): <p>Shares no borders</p>}
                           
                           
                       </div>

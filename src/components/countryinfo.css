@@ -4,6 +4,10 @@
     padding: 4rem 5rem;
 }
 
+.country__info h4 {
+    margin-top: 20px;
+}
+
 
 .country__back-button {
     background: hsl(209, 23%, 22%);
