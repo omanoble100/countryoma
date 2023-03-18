@@ -9,13 +9,19 @@ const CountryInfo = () => {
 
   const [country, setCountry] = useState([])
 
+  const [isLoading, setIsLoading] = useState(true)
+
+  const [error, setError] = useState('')
+
   const {countryName} = useParams();
 
   
   const getCountryBySearch = () => {
     fetch(`https://restcountries.com/v3.1/name/${countryName}`)
     .then(response => response.json())
-    .then(data => setCountry(data))
+    .then(data => {setCountry(data); setIsLoading(false)})
+
+    .catch((err) => { setIsLoading(false); setError(err.message)})
 
     
   }
@@ -27,6 +33,8 @@ const CountryInfo = () => {
   
   return (
     <div className='country__info'>
+      {isLoading && !error && <h4>Loading.......</h4>}
+            {error && !isLoading && <h4>{error}</h4>}
       <Link to='/'><button className='country__back-button'>Back</button></Link>
 
         {
@@ -61,8 +69,8 @@ const CountryInfo = () => {
                           <p><strong>Border Countries :</strong></p>
 
                           { country?.borders?.map(border => (
-                            <div className='display-borders'>
-                                <button key={border}>{border}</button>
+                            <div className='display-borders' key={border}>
+                                <button >{border}</button>
                             </div>
                           )) }
                           
