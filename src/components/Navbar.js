@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
 
         <div className='background__mode'>
-                <div className='img-mode'>
+                <div className='img-mode' onClick={() => setBgmode(!bgmode)}>
                     {bgmode ? <BsMoonFill size={20} color='white' />: <BsFillSunFill size={20} color='white'/>}
                 </div>
 
