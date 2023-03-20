@@ -14,9 +14,6 @@ function App() {
                 
                   <Route path="/" exact element={<Countries />}/>
                   <Route path="/country/:countryName" exact element={<CountryInfo />}/>
-                  {/* <Route path="/video/:id" element={<VideoDetail />}/>
-                  <Route path="/channel/:id" element={<ChannelDetail />}/>
-                  <Route path="/search/:searchTerm" element={<SearchFeed />}/> */}
             </Routes>
                   
       </BrowserRouter>

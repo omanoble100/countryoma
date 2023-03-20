@@ -9,6 +9,13 @@ const Navbar = () => {
   const [bgmode, setBgmode] = useState(false);
 
   
+  const changeMode = () => {
+    
+    document.body.classList.toggle('light-mode')
+    
+  }
+
+  
   return (
     
     <div className='nav' >

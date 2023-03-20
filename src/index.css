@@ -17,4 +17,9 @@ a {
     text-decoration: none ;
     border: none;
   }
+
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
   
