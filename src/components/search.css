@@ -56,11 +56,13 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    color: white;
 }
 
 #list {
     width: 14.5%;
     background:hsl(209, 23%, 22%) ;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 6px;
     overflow: hidden;
@@ -69,6 +71,7 @@
     right: 10;
     left: 10;
     z-index: 10;
+    
 }
 
 

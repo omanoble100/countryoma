@@ -14,6 +14,9 @@
     cursor: pointer;
 }
 
+.mode-icon {
+    color: white;
+}
 
 .background__mode {
     display: flex;

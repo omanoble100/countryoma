@@ -23,7 +23,7 @@ const Search = ({onSearch, onFilter }) => {
   return (
     <div className='country__info-section'>
         <div className='country__search'>
-            <FiSearch  size={27} className='search-icon' onClick={submitHandler}/>
+            <FiSearch  size={27} className='search-icon mode-icon' onClick={submitHandler}/>
             <input placeholder='Search for a country...' onChange={(e) => setCountryInput(e.target.value)} />
         </div>
 

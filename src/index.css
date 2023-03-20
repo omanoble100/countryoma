@@ -3,23 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Nunito Sans', sans-serif;
 }
-
 
 body {
-    background:  hsl(207, 26%, 17%);
-    
+    background: hsl(207, 26%, 17%);
 }
+
 
 a {
     color: white;
     text-decoration: none ;
     border: none;
   }
-
-  .light-mode {
-    background-color: white;
-    color: black;
-  }
-  

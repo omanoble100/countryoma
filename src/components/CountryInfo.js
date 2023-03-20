@@ -50,8 +50,8 @@ const CountryInfo = () => {
                     <div>
                         <div className='country-information'>
                             <div>
-                              {country?.nativeName?.map(native => (<span key={native.common}>{native.common}</span>))}
-                              {/* <p>-* <strong>Native Name :</strong> {country.nativeName}</p> */}
+                              {/* {country.nativeName (<span key={native.common}>{native.common}</span>)): <p>No native name</p>} */}
+                              <p> <strong>Native Name :</strong> {country.nativeName ? country.nativeName?.map(native => <p>{native.common}</p>): <p>No native name</p>}</p>
                               <p> <strong>Population :</strong> {country.population.toLocaleString()}</p>
                               <p> <strong>Region :</strong> {country.region}</p>
                               <p> <strong>Sub Region :</strong> {country.subregion}</p>

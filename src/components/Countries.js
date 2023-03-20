@@ -49,7 +49,7 @@ const Countries = () => {
 
   return (
 
-    <div className='countries__section'>
+  <div className='countries__section'>
 
     <Search  onSearch={getCountryBySearch} onFilter={getCountryByRegion} />
       {isLoading && !error && <h4>Loading.......</h4>}

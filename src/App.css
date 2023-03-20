@@ -1,9 +1,54 @@
-.App {
-  background-color: hsl(207, 26%, 17%);
-  color: white;
-  font-family: 'Nunito Sans', sans-serif;
-  height: 100vh;
+* {
+  transition: all 0.1s ease-in-out;
 }
+
+.App {
+    background: hsl(207, 26%, 17%);
+
+}
+
+.light .App {
+  background:  white;
+  color: black;
+}
+
+.light, .light #selectField  {
+  background:  white;
+  color: black;
+}
+
+.light a, .light .country__info{
+  color: black;
+}
+
+
+.light .nav, .light .country__all, .light .country__search, .light .country__search input {
+  background: white;
+  color: black;
+}
+
+.light ::placeholder {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.light #list {
+  background: white;
+  color: black;
+}
+
+.light .country__borders button, .light .country__back-button{
+  background: white;
+  color: black;
+  border: 1px solid  hsl(207, 26%, 17%);
+}
+
+
+.light .mode-icon {
+  color: black;
+}
+
 
 
 
